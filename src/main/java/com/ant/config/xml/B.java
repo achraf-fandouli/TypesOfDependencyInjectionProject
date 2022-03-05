@@ -8,9 +8,12 @@ public class B {
 		a.show();
 	}
 
-	public void setA(A a) {
+	public B(A a) {
+		super();
 		this.a = a;
 	}
+
+	
 	
 	
 }
