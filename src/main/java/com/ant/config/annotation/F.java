@@ -8,8 +8,18 @@ et pour q'il soit un composant spring il faut au minimum avoir l'annotation @Com
 @Component("f1")
 public class F {
 
-	@Autowired // injection implicite(sans la creation de setter)
 	private E e;
+
+	
+ /*
+* ( a partir de la version spring 4.3 on peut faire l'injection dans le
+* constructeur sans l'utilisation de l'annoation Autowired)
+*/
+	@Autowired
+	public F(E e) {
+		super();
+		this.e = e;
+	}
 
 	public void m() {
 		e.show();
