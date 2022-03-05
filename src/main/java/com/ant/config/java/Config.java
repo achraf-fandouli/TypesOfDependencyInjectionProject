@@ -13,10 +13,9 @@ public class Config {
 	}
 
 	// par défaut le bean prend le nom de la méthode
-	@Bean(name = "d1") 
+	@Bean(name = "d1") // dans ce cas le nom sera prioritaire au nom de la méthode
 	public D d() {
-		D d = new D();
-		d.setC(c1());
+		D d = new D(c1());
 		return d;
 	}
 

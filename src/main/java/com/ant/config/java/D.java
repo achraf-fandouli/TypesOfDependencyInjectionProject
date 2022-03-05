@@ -8,8 +8,11 @@ public class D {
 		c.show();
 	}
 
-	public void setC(C c) {
+	public D(C c) {
+		super();
 		this.c = c;
 	}
+
+	
 
 }
